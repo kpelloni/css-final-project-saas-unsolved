@@ -1,0 +1,204 @@
+* {
+    /* align-items: center; */
+
+}  
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px dashed;
+}
+
+.topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* height: 75px; */
+    /* padding: 5px 0 0 0; */
+    border: 2px solid orange;
+}
+
+.front-logo {
+    /* height: 9em; */
+    width: 9em;
+    border: 3px dashed;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.nav-bar{
+    padding: 10px 5px 5px 10px;
+}
+
+.nav-bar:hover{
+    color: blue;
+}
+
+
+.buy-btn {
+    background-color: blue;
+    color: white;
+    /* height: 1.5em;
+    width: 5em; */
+    border-radius: 30px;
+    padding: 15px 25px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 1024)
+{ */
+
+/* .whyfront {
+    border: 2px dashed blue;
+    display: flex;
+    flex-direction: column;
+}
+
+.steps {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid pink;
+}
+
+
+.pricing-area{
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.pricing{
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.plan{
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 40px;
+}
+
+.features{
+    padding: 5px;
+    border: 3px dashed green;
+    gap: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+
+}
+
+.comp-box,
+.cancel-box,
+.images-box,
+.money-box{
+    padding: 10px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 280px;
+    height: 220px;
+    text-wrap: wrap;
+}
+
+.comp-box {
+    border: 2px solid blue;
+    
+}
+
+.cancel-box{
+    border: 2px solid red;
+
+}
+.images-box{
+    border: 2px solid blue;
+    
+}
+
+.money-box{
+    border: 2px solid red;
+    
+}
+
+.blue-section {
+    background-color: navy;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.blue-section .hire, .testamony, .employee{
+    color:white;
+}
+
+.hire {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 40px;
+}
+
+/* watch form video to get the alignments right */
+/* .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+    border: 2px solid green;
+    border-radius: 10% 10%;
+    background-color: white;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.info,
+.comp-links,
+.comp-features,
+.comp-docs,
+.comp-resources {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+
+}
+
+.comp-links{
+    
+}
+
+.comp-features {
+    
+} */ 
