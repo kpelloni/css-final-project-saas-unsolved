@@ -1,5 +1,7 @@
 * {
     /* align-items: center; */
+    font-family: Inter ;
+    /* gap: 20px; */
 
 }  
 
@@ -8,8 +10,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-    border: 3px dashed;
+    outline: 3px dashed;
 }
 
 .topnav {
@@ -17,15 +18,14 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    /* height: 75px; */
-    /* padding: 5px 0 0 0; */
-    border: 2px solid orange;
+    outline: 2px solid orange;
+    padding: 10px 30px;
 }
 
 .front-logo {
     /* height: 9em; */
     width: 9em;
-    border: 3px dashed;
+    outline: 3px dashed;
 }
 
 .nav {
@@ -36,12 +36,12 @@
 
 .nav-bar{
     padding: 10px 5px 5px 10px;
+    font-size: 14px;
 }
 
 .nav-bar:hover{
     color: blue;
 }
-
 
 .buy-btn {
     background-color: blue;
@@ -51,36 +51,160 @@
     border-radius: 30px;
     padding: 15px 25px;
     text-align: center;
+    font-size: 12px;
 }
 
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 450px;
+    outline: 2px solid rgb(255, 0, 255);
+    gap: 10px;
+    padding: 40px 30px 0px;
+    background-image: url("../assets/bg/background-top.svg");
+}
 
-
-
-
-
-
-
-
-
-
-/* @media (max-width: 1024)
-{ */
-
-/* .whyfront {
-    border: 2px dashed blue;
+.leftpart{
+    outline: 3px solid;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
+
+.intro-title {
+    font-weight: 500;
+    font-size: 40px;
+    outline: 2px dashed red;
+}
+
+.subtext{
+    outline: 2px dashed orange;
+    font-size: 14px;
+    font-weight: 500;
+    color: #677788;
+    margin-bottom: 20px;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.button {
+    outline: 3px solid rgb(2, 2, 66);
+}
+
+.learnmore {
+    outline: 2px dashed cyan;
+    color: #677788;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo-area {
+    outline: 3px solid green;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    outline: 2px dashed rgb(255, 0, 43);
+    padding: 16px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    gap: 10px;
+    margin: 5px;
+    box-shadow: px;
+
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+}
+
+.google img {
+    width: 60px;
+    height: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.whyfront {
+    outline: 2px dashed blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.whyfrontTitle {
+    font-weight: 700;
+    font-size: 26px;
+    outline: 2px dashed red;
+}
+
+.whyfront .subtext {
+    width: 600px;
+    text-align: center;
+}
+
+.stepbullet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    outline: 2px solid purple;
+}
+
+.bullet{
+    outline: 2px solid pink;
+    padding: 30px;
+
+}
+
+
+
 
 .steps {
     display: flex;
     flex-direction: row;
-    border: 2px solid pink;
+    justify-content: space-between;
+    align-items: center;
+    outline: 2px solid rgb(83, 47, 53);
+}
+
+.steps div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    outline: 2px solid pink;
 }
 
 
+
+/* 
 .pricing-area{
-    border: 2px solid green;
+    outline: 2px solid green;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,14 +212,14 @@
 }
 
 .pricing{
-    border: 2px solid yellow;
+    outline: 2px solid yellow;
     display: flex;
     flex-direction: column; 
     justify-content: center; 
 }
 
 .plan{
-    border: 3px solid black;
+    outline: 3px solid black;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -104,7 +228,7 @@
 
 .features{
     padding: 5px;
-    border: 3px dashed green;
+    outline: 3px dashed green;
     gap: 5px;
     display: flex;
     flex-flow: row wrap;
@@ -128,21 +252,21 @@
 }
 
 .comp-box {
-    border: 2px solid blue;
+    outline: 2px solid blue;
     
 }
 
 .cancel-box{
-    border: 2px solid red;
+    outline: 2px solid red;
 
 }
 .images-box{
-    border: 2px solid blue;
+    outline: 2px solid blue;
     
 }
 
 .money-box{
-    border: 2px solid red;
+    outline: 2px solid red;
     
 }
 
@@ -172,8 +296,8 @@
     align-items: flex-start;
     gap: 10px;
     padding: 20px;
-    border: 2px solid green;
-    border-radius: 10% 10%;
+    outline: 2px solid green;
+    outline-radius: 10% 10%;
     background-color: white;
 }
 
