@@ -1,8 +1,5 @@
 * {
-    /* align-items: center; */
     font-family: Inter ;
-    /* gap: 20px; */
-
 }  
 
 .navigation {
@@ -24,7 +21,7 @@
 
 .front-logo {
     /* height: 9em; */
-    width: 9em;
+    width: 155px;
     outline: 3px dashed;
 }
 
@@ -37,6 +34,11 @@
 .nav-bar{
     padding: 10px 5px 5px 10px;
     font-size: 14px;
+}
+
+
+.navmenu {
+    display: none;
 }
 
 .nav-bar:hover{
@@ -57,8 +59,7 @@
 .head {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    height: 450px;
+    /* height: 450px; */
     outline: 2px solid rgb(255, 0, 255);
     gap: 10px;
     padding: 40px 30px 0px;
@@ -67,15 +68,17 @@
 
 .leftpart{
     outline: 3px solid;
+    width: 45%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 
 .intro-title {
     font-weight: 500;
     font-size: 40px;
+    width: 335px;
     outline: 2px dashed red;
 }
 
@@ -105,10 +108,13 @@
 }
 
 .logo-area {
-    outline: 3px solid green;
+    outline: 3px dashed green;
+    width: 55%;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex: auto;
+    flex-direction: column;
+    /* flex-flow: row wrap; */
+    /* justify-content: center; */
     align-items: center;
 }
 
@@ -117,12 +123,13 @@
     padding: 16px;
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
-    gap: 10px;
-    margin: 5px;
-    box-shadow: px;
+    gap: 10em;
+    margin: 1em;
+    /* box-shadow: 5px; */
 
 }
 
+/* specifying size here */
 .logo img {
     width: 80px;
     height: 80px;
@@ -133,20 +140,49 @@
     height: 60px;
 }
 
+/* positioning logos */
 
+.logo-area .google-logo {
+    position: relative;
+    top: 0em;
+    left: -12em;
+}
 
+.logo-area .atlassian-logo {
+    position: relative;
+    top: -8em;
+    left: 0em;
+}
 
+.logo-area .asana-logo {
+    position: relative;
+    top: -17em;
+    left: 11em;
+}
 
+.logo-area .paypal-logo {
+    position: relative;
+    top: -17em;
+    left: -9em;
+}
 
+.logo-area .weave-logo {
+    position: relative;
+    top: -26em;
+    left: 6em;
+}
 
+.logo-area .googleads-logo {
+    position: relative;
+    top: -26em;
+    left: -1em;
+}
 
-
-
-
-
-
-
-
+.logo-area .calendar-logo {
+    position: relative;
+    top: -27em;
+    left: 11em;
+}
 
 .whyfront {
     outline: 2px dashed blue;
@@ -154,8 +190,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-
 }
 
 .whyfrontTitle {
@@ -179,11 +213,7 @@
 .bullet{
     outline: 2px solid pink;
     padding: 30px;
-
 }
-
-
-
 
 .steps {
     display: flex;
@@ -201,8 +231,6 @@
 }
 
 
-
-/* 
 .pricing-area{
     outline: 2px solid green;
     display: flex;
@@ -289,7 +317,7 @@
 }
 
 /* watch form video to get the alignments right */
-/* .contact-form {
+.contact-form {
     display: flex;
     flex-direction: column;
     justify-content: right;
@@ -325,4 +353,16 @@
 
 .comp-features {
     
-} */ 
+} 
+
+@media screen (width 768-1023) {{{}
+    .navmenu {
+    display: block;
+    }
+    .nav-bar {
+        display:none;
+    }
+}
+}
+
+

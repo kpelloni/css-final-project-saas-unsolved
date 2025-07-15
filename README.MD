@@ -8,7 +8,7 @@ In today’s digital landscape, having a strong foundation in HTML and CSS is es
 
 **This Assignment is NOT tested. You can use all the desired creativity, but make sure it 100% follows all the requirements!**
 
-Please visit the [project mockups page](https://www.figma.com/design/Ou3rfktmwkXShiSi9c1rKZ/SAAS-Landing-Page?node-id=0-1&m=dev&t=fWkuFirYcZYC8hhZ-1)
+Please visit the [project mockups page](https://www.figma.com/design/Ou3rfktmwkXShiSi9c1rKZ/SAAS-Landing-Page?node-id=0-1&m=dev&t=fWkuFirY cZYC8hhZ-1)
 
 ## Standard Requirements
 
@@ -29,8 +29,8 @@ Please visit the [project mockups page](https://www.figma.com/design/Ou3rfktmwkX
 - [ ] The project initially includes a single CSS file, but you can use multiple files if needed. Ensure that styles are not duplicated across these files.
 - [ ] You can use any fonts you prefer, such as standard library sans-serif fonts or sans-serif web fonts.
 - [x ] The screenshots of the solved version of that project are located in `/assets/screenshots/`.
-- [ ] The background image for the top section is located in `/assets/bg/`.
-- [ ] The logos of brands used in the project are located in `/assets/logos/`.
+- [x ] The background image for the top section is located in `/assets/bg/`.
+- [x ] The logos of brands used in the project are located in `/assets/logos/`.
 - [ ] Other images to be used are located in `/assets/images/`.
 - [ ] Icons for buttons, top navigation, and bottom navigation should be implemented using an icon font of your choice (icons should not be images).
 
