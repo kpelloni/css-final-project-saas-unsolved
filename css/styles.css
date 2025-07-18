@@ -7,7 +7,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    outline: 3px dashed;
+    /* outline: 3px dashed; */
 }
 
 .topnav {
@@ -56,7 +56,7 @@
 }
 
 .leftpart{
-    outline: 1px solid;
+    /* outline: 1px solid; */
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -68,11 +68,11 @@
     font-weight: 500;
     font-size: 40px;
     width: 335px;
-    outline: 2px dashed red;
+    /* outline: 2px dashed red; */
 }
 
 .subtext{
-    outline: 2px dashed orange;
+    /* outline: 2px dashed orange; */
     font-size: 14px;
     font-weight: 500;
     color: #677788;
@@ -82,6 +82,7 @@
 .actions {
     display: flex;
     flex-direction: row;
+    padding-top: 40px;
 
 }
 
@@ -92,19 +93,28 @@
     padding: 15px 25px;
     text-align: center;
     font-size: 12px;
-    outline: 1px solid rgb(2, 2, 66);
+    /* outline: 1px solid rgb(2, 2, 66); */
 }
 .play-button {
     width: 0;
     height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-   border-left: 15px solid #ffffff; /* Black triangle */
-    cursor: pointer;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 15px solid #ffffff; /* Black triangle */
+    /* cursor: pointer; */
+    padding-right: 3px;
 }
 
+.button:hover{
+    background-color: indigo;
+}
+
+.play {
+    display: flex;
+
+}
 .learnmore {
-    outline: 2px dashed cyan;
+    /* outline: 2px dashed cyan; */
     color: #677788;
     text-align: center;
     font-weight: 700;
@@ -116,7 +126,7 @@
 }
 
 .logo-area {
-    outline: 3px dashed green;
+    /* outline: 3px dashed green; */
     width: 55%;
     position: relative;
     display: flex;
@@ -126,7 +136,7 @@
 }
 
 .logo {
-    outline: 2px dashed rgb(255, 0, 43);
+    /* outline: 2px dashed rgb(255, 0, 43); */
     padding: 16px;
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
@@ -162,13 +172,13 @@
 }
 
 .asana-logo {
-    position:   relative;
+    position:  relative;
     top: -8em;
     left: 11em;
 }
 
 .paypal-logo {
-    position:   relative;
+    position:  relative;
     top: -3em;
     left: -10em;
 }
@@ -195,53 +205,92 @@
 
 .whyfront {
     outline: 2px dashed blue;
+    margin: auto;
+    height: 355px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.whyfrontTitle {
+.whyfrontTitle,
+.pricing {
     font-weight: 700;
     font-size: 26px;
-    outline: 2px dashed red;
+    /* outline: 2px dashed red; */
 }
 
-.whyfront .subtext {
-    width: 600px;
+.whyfront {
+    width: 100%;
+    text-align: center;
+}
+
+.subtext {
     text-align: center;
 }
 
 .stepbullet {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    outline: 2px solid purple;
+    justify-content: center;
+    align-items: center;
+    /* outline: 2px solid purple; */
 }
 
 .bullet{
-    outline: 2px solid pink;
+    /* outline: 2px solid pink; */
+    background-color: #ECF2FF;
     padding: 30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    
+}
+.elements,
+.bullet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.ctrbul {
+    height: 10px;
+    width: 10px;
+    background-color: #325a85;
+    border-radius: 50%;
+}
+
+.wing {
+    background-color: #677788;
+    width: 41px;
+    height: 1px;
+}
+.wing1 {
+    background-color: rgb(73, 63, 63);
+    height: 1px;
+    width: 41px;
+}
 .steps {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    outline: 2px solid rgb(83, 47, 53);
+    /* align-items: center; */
+    /* outline: 2px solid rgb(212, 117, 133); */
+    padding: 2px 20px;
+    text-wrap: nowrap;
+
 }
 
-.steps div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    outline: 2px solid pink;
+.step {
+    /* outline: 2px dashed red; */
+    padding: 0 30px;
 }
 
 
 .pricing-area{
     outline: 2px solid green;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -249,46 +298,104 @@
 }
 
 .pricing{
-    outline: 2px solid yellow;
+    /* outline: 2px solid yellow; */
     display: flex;
-    flex-direction: column; 
+    /* flex-direction: column;  */
     justify-content: center; 
+}
+.planfeats{
+    display: flex;
+    flex-direction: row; 
+    /* outline: 1px solid yellow; */
 }
 
 .plan{
-    outline: 3px solid black;
+    /* outline: 3px solid rgb(146, 11, 11); */
     display: flex;
+    width: 40%;
     flex-direction: column;
     justify-content: flex-start;
     padding: 40px;
+    gap: 10px;
+}
+
+
+.cost {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.number {
+    font-size: 50px;
+}
+
+.length {
+    color: #677788;
+}
+
+.divider {
+    height: 2px;
+    width: 100px;
+    background-color: gray;
+    margin: 20px 0;
+}
+
+.cost-text {
+    font-weight: 500;
+    line-height: 24px;
+    color: #677788;
+}
+
+.cost-subtext{
+    font-size: 12px;
+    color: #677788;
+
 }
 
 .features{
-    padding: 5px;
-    outline: 3px dashed green;
+    padding: 10px;
+    /* outline: 3px dashed green; */
     gap: 5px;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
 
 }
+.comp-logo,
+.cancel-logo,
+.images-logo,
+.money-logo {
+    height: 50px;
+    margin: 0;
+}
 
 .comp-box,
 .cancel-box,
 .images-box,
 .money-box{
-    padding: 10px;
-    gap: 5px;
+    padding: 20px;
+    gap: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     width: 280px;
     height: 220px;
     text-wrap: wrap;
 }
 
-.comp-box {
+.comp-title,
+.cancel-title,
+.images-title,
+.money-title {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+/* .comp-box {
     outline: 2px solid blue;
     
 }
@@ -305,13 +412,14 @@
 .money-box{
     outline: 2px solid red;
     
-}
+} */
 
 .blue-section {
     background-color: navy;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    outline: 2px dashed orange
 }
 .blue-section .hire, .testamony, .employee{
     color:white;
@@ -331,12 +439,22 @@
     flex-direction: column;
     justify-content: right;
     align-items: flex-start;
-    gap: 10px;
+    gap: 20px;
     padding: 20px;
     outline: 2px solid green;
-    outline-radius: 10% 10%;
+    border-radius: 15%;
     background-color: white;
 }
+
+
+
+
+
+
+
+
+
+
 
 .footer{
     display: flex;
@@ -364,14 +482,19 @@
     
 } 
 
-@media screen (width 768-1023) {{{}
+@media  (max-width: 1023px) {
     .navmenu {
     display: block;
     }
-    .nav-bar {
+    .nav-bar, .buy-btn {
         display:none;
     }
 }
+
+
+
+
+
+@media (max-width: 767px){
+
 }
-
-
