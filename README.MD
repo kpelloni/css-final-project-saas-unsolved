@@ -31,7 +31,7 @@ Please visit the [project mockups page](https://www.figma.com/design/Ou3rfktmwkX
 - [x ] The screenshots of the solved version of that project are located in `/assets/screenshots/`.
 - [x ] The background image for the top section is located in `/assets/bg/`.
 - [x ] The logos of brands used in the project are located in `/assets/logos/`.
-- [ ] Other images to be used are located in `/assets/images/`.
+- [x ] Other images to be used are located in `/assets/images/`.
 - [ ] Icons for buttons, top navigation, and bottom navigation should be implemented using an icon font of your choice (icons should not be images).
 
 `Desktop specific`
@@ -43,8 +43,8 @@ Please visit the [project mockups page](https://www.figma.com/design/Ou3rfktmwkX
   - [ ] Top navigation items
   - [ ] All buttons (e.g., buy, play, form submit) (use the inverse colors for the border, background, text color and the icon color for the hovered state)
   - [ ] The main price box in the "Pricing" section (add the shadow around the box for the hovered state)
-  - [ ] Bottom navigation items
-  - [ ] "View privacy policy" link in the form
+  - [ x] Bottom navigation items
+  - [ x] "View privacy policy" link in the form
 
 `Tablet and mobile specific`
 

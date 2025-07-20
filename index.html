@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c62ef44644.js" crossorigin="anonymous"></script>
     <title>Saas company</title>
   </head>
   <body>
@@ -101,15 +102,18 @@
           <div class="comp-title">Hundreds of Components</div>
           <div class="comp-text">Achieve maximum productivity with minimum effort with Front and create robust limitless products.</div>
           </div>
-          <div class="cancel-box">
-          <img class="cancel-logo" src="./assets/images/cancel.svg" alt="Cancel Logo">
-          <div class="cancel-title">Cancel anytime</div> 
-          <div class="cancel-text">If it's not for you, just cancel. No hidden costs or fees.</div>
-          </div>
+          
           <div class="images-box">
           <img class="images-logo" src="./assets/images/images.svg" alt="Images Logo"> 
           <div class="images-title">Images Included</div>
           <div class="images-text">Images included. We make custom license for all our premium images in Front.</div>
+          </div>
+          <div class="cancel-box">
+          <img class="cancel-logo" src="./assets/images/cancel.svg" alt="Cancel Logo">
+          <div class="cancel-title">Cancel anytime
+            <div class="sketch">sketch</div>
+          </div> 
+          <div class="cancel-text">If it's not for you, just cancel. No hidden costs or fees.</div>
           </div>
           <div class="money-box">
           <img class="money-logo" src="./assets/images/moneyback.svg" alt="Money Logo">
@@ -121,35 +125,53 @@
     </div>
     <div class="blue-section">
       <div class="hire">
-        <h2>Hire Us</h2>
-        <h3>Whatever your goal - we will get you there.</h3>
-      
-        <div class="testamony">
-          <p>"I Love Front! I love the ease of use, I love the fact that I have total creative freedom..."</p>
+        <div class="top">
+          <div class="hireUs">Hire Us</div>
+          <div class="whatever">Whatever your goal - we will get you there.</div>
+          <div class="divider"></div>
+          <div>
+            <p class="testamony">"I love Front! I love the ease of use, I love the fact that I have total creative freedom..."</p>
+          </div>
         </div>
         <div class="employee">
           <div class="emp-charlotte">Charlotte Moore</div>
           <div class="emp-title">Head of Commercials, Slack</div>
-          <div class="emp-img">X</div>
+          <img class="emp-img" src="./assets/images/man_one.jpg" alt="">
         </div>
       
       </div>
-        <div class="contact-form">
-          <form action="#" class="contactform">
+        <div class="contact-Form">
+          <form action="#" class="contactForm">
             <p>Fill out the form and we'll be in touch as soon as possible</p>
-            <input type="text" name="first-name" id="first-name" placeholder="First name" required>
-            <input type="text" name="last-name" id="last-name" placeholder="Last name" required> <br>
-            <input type="email" name="email" id="email" placeholder="Email" required><br>
-            <select id="budget" name="budget">
-              <option value="Budget" disabled>Budget</option>
+            <div class="nameSection">
+              <input 
+              type="text" 
+              name="first-name" 
+              id="first-name" 
+              placeholder="First name" required>
+              <input 
+              type="text" 
+              name="last-name" 
+              id="last-name" 
+              placeholder="Last name" required> 
+            </div>
+              <input 
+              class="email"
+              type="email" 
+              name="email" 
+              id="email" 
+              placeholder="Email" required>
+            <div class="dropdown">
+              <select id="budget" name="budget">
+              <option value="">Budget Requirements</option>
               <option value="Lessthan100">Less than $100</option>
               <option value="101to500">$101 to $500</option>
               <option value="501to1000">$501 to 1000</option>
               <option value="1001to2000">$1001 to $2000</option>
               <option value="Morethan2000">More than $2000</option>
-            </select>
-            <select id="country" name="country">
-              <option value="Country" disabled>Country</option>
+              </select>
+              <select id="country" name="country">
+              <option value="">Country</option>
               <option value="Wakanda">Wakanda</option>
               <option value="Latveria">Latveria</option>
               <option value="Avanzante">Avanzante</option>
@@ -157,13 +179,19 @@
               <option value="United States of Anarchy">United States of America</option>
               <option value="Canada">Canada</option>
               <option value="Mexico">Mexico</option>
-            </select><br>
-            <textarea name="project" id="project" placeholder="Tell us more about your project, needs, and timeline, please..." rows="5" cols="30"></textarea>
-            <br>
-
-            <input type="checkbox" id="marketing" name="marketing" value="YES">
-            <label for="marketing">Yes, I'd like to receive occasional marketing emails from Front. I have the right to opt out at any time.</label><br>
-
+              </select>
+            </div>
+            <textarea class="project" name="project" id="project" placeholder="Tell us more about your project, needs, and timeline, please..." rows="5" cols="30"></textarea>
+          <div class="formGroup">
+            <input type="checkbox" id="marketing" name="marketing" value="YES"> 
+            <div class="yes">
+              <label for="marketing">Yes, I'd like to receive occasional marketing emails from Front. I have the right to opt out at any time.</label>
+              <div class="link">
+                <a href="#">Veiw Privacy Policy</a>
+                <a href="#">Veiw Terms of Service</a>
+              </div> 
+            </div>
+          </div>
             <input class="button" type="submit" value="Get Started">
           </form>
           
@@ -172,39 +200,43 @@
     
     <footer>
       <div class="footer">
-        <div class="complogo"><img src="../assets/logos/logo-front.svg" alt="Front Logo"></div>
-        <div class="info">
-          <div class="address">153 Williamson Plaza, Maggieberg</div>
-          <div class="phone"> +1 (062) 109-9222</div>
+        <div class="leftpanel">
+          <div class="front-logo"><img src="../assets/logos/logo-front.svg" alt="front logo"></div>
+          <div class="data">
+            <div class="address"><i class="fa-solid fa-location-arrow"></i> 153 Williamson Plaza, Maggieberg</div>
+            <div class="phone"><i class="fa-solid fa-phone"></i> +1 (062) 109-9222</div>
+          </div>
         </div>
-        <div class="comp-links">Company</div>
-        <ul>
-          <li>About</li>
-          <li>Career</li> 
-          <li>Blog</li>
-          <li>Customers</li>
-          <li>Hire Us</li>
-        </ul>
-        <div class="comp-features">Features</div>
-        <ul>
-          <li>Press</li>
-          <li>Release Notes</li>
-          <li>Integrations</li>
-          <li>Pricing</li>
-        </ul>
-        <div class="comp-docs">Documentation</div>
-        <ul>
-          <li>Support</li>
-          <li>Docs</li>
-          <li>Status</li>
-          <li>API Reference</li>
-          <li>Tech Requirements</li>
-        </ul>
-        <div class="comp-resouce">Resources</div>
-        <ul>
-          <li>Help</li>
-          <li>Your Account</li>
-        </ul>
+        <div class="companylinks">
+          <div class="Comp title">Company</div>
+            <div class="Clinks">About</div>
+            <div class="Clinks hiring">Career 
+              <div class="hire-btn">We're Hiring!</div>
+            </div>
+            <div class="Clinks">Blog</div>
+            <div class="Clinks">Customers</div>
+            <div class="Clinks">Hire Us</div>
+        </div> 
+        <div class="companyfeatures">
+          <div class="Feature title">Features</div>
+            <div class="Flinks">Press</div>
+            <div class="Flinks">Release Notes</div>
+            <div class="Flinks">Integrations</div>
+            <div class="Flinks">Pricing</div>
+          </div>
+          <div class="companyDocuments">
+          <div class="Doumentation title">Documentation</div>
+            <div class="DocLinks">Support</div>
+            <div class="DocLinks">Docs</div>
+            <div class="DocLinks">Status</div>
+            <div class="DocLinks">API Reference</div>
+            <div class="DocLinks">Tech Requirements</div>
+          </div>
+          <div class="companyResource">
+            <div class="Resource title">Resources</div>
+            <div class="Rlinks Help"><i class="fa-solid fa-circle-info"></i>Help</div>
+            <div class="Rlinks Account"><i class="fa-solid fa-circle-user"></i>Your Account</div>
+          </div>  
       </div>
     </footer>
   </body>

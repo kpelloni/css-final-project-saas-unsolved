@@ -87,12 +87,14 @@
 }
 
 .button {
-    background-color: blue;
+    background-color: #2576FF;
     color: white;
     border-radius: 30px;
-    padding: 15px 25px;
+    padding: 15px 25px 10px;
     text-align: center;
     font-size: 12px;
+    width: 8em;
+    height: 2em;
     /* outline: 1px solid rgb(2, 2, 66); */
 }
 .play-button {
@@ -106,12 +108,12 @@
 }
 
 .button:hover{
-    background-color: indigo;
+    filter: invert(1);
 }
 
 .play {
     display: flex;
-
+    gap: 4px;
 }
 .learnmore {
     /* outline: 2px dashed cyan; */
@@ -201,8 +203,6 @@
     left: 11em;
 }
 
-
-
 .whyfront {
     outline: 2px dashed blue;
     margin: auto;
@@ -241,7 +241,7 @@
 .bullet{
     /* outline: 2px solid pink; */
     background-color: #ECF2FF;
-    padding: 30px;
+    padding: 15px;
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -394,8 +394,29 @@
     font-size: 18px;
 }
 
+.cancel-title{
+    display: flex;
+    flex-direction: row;
+}
 
-/* .comp-box {
+.sketch{
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #01C9A7;
+    padding: 5px 3px 0;
+    height: 23px;
+    width: 60px;
+    border-radius: 15px;
+    margin-left: 5px;
+}
+
+.sketch:hover {
+    background-color: #014136;
+}
+
+.comp-box {
     outline: 2px solid blue;
     
 }
@@ -412,14 +433,16 @@
 .money-box{
     outline: 2px solid red;
     
-} */
+}
 
 .blue-section {
-    background-color: navy;
+    background-color: #20335B;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    outline: 2px dashed orange
+    align-items: center;
+    outline: 2px dashed orange;
+    padding: 30px;
 }
 .blue-section .hire, .testamony, .employee{
     color:white;
@@ -429,58 +452,221 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
     margin: 40px;
+    gap: 60px;
+    padding-left: 40px;
+    /* outline: 2px dashed yellow; */
+}
+
+.top {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hireUs {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: left;
+    /* outline: 2px dashed white; */
+}
+
+.whatever{
+    color: #677788;
+}
+
+.testamony {
+    font-style: italic;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.employee{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    /* outline: 2px dashed pink; */
+}
+
+.emp-charlotte {
+    font-weight: 700;
+}
+
+.emp-title{
+    font-weight: 500;
+    font-size: 14px;
+    color: #677788;
+    gap: 30px;
+
+}
+
+.emp-img {
+    border-radius: 50%;
+    gap: 30px;
+    height: 60px;
+    width: 60px;
 }
 
 /* watch form video to get the alignments right */
-.contact-form {
+.contact-Form {
     display: flex;
-    flex-direction: column;
-    justify-content: right;
-    align-items: flex-start;
-    gap: 20px;
+    justify-content: center;
     padding: 20px;
-    outline: 2px solid green;
-    border-radius: 15%;
-    background-color: white;
 }
 
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    outline: 2px solid green;
+    border-radius: 10%;
+    background-color: white;
+    line-height: 25px;
+}
+.nameSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    width: 100%;
+}
 
+.email{
+    width: 100%;
+}
 
+.dropdown {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    width: 100%;
+}
 
+.project {
+    width: 100%;
+}
 
+input.button{
+    padding: 0;
+}
 
+.formGroup,
+.link {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5px;
+}
 
+.yes {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
+a {
+    color: #677788;
+}
 
+a:hover{
+    color: #2476FF;
+}
 
+input.button {
+    justify-content: center;
+}
 
 .footer{
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-evenly;
+    padding: 40px 30px;
+    outline: 1px dashed;
 }
 
-.info,
-.comp-links,
-.comp-features,
-.comp-docs,
-.comp-resources {
+.leftpanel,
+.companylinks,
+.companyfeatures,
+.companyDocuments,
+.companyResource {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 5px;
-
 }
 
-.comp-links{
-    
+.data { 
+    color: #677788;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 10px;
 }
 
-.comp-features {
+.companylinks{
+    outline: 2px dashed green;
+}
+
+.hiring {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+.hire-btn {
+    font-size: 8px;
+    padding: 2px 4px;
+    color: white;
+    border-radius: 3px;
+    background-color: #2576FF;
+}
+
+.companyfeatures {
+    outline: 2px dashed blue;
     
 } 
+
+.companyDocuments{
+    outline: 2px dashed purple;
+
+}
+
+.companyResource {
+    outline: 2px dashed rgb(169, 141, 245);
+}
+
+.Help,
+.Account {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.Clinks,
+.Flinks,
+.DocLinks,
+.Rlinks {
+    font-size: 14px;
+    color: #677788;
+}
+
+.Clinks:hover,
+.Flinks:hover,
+.DocLinks:hover,
+.Rlinks:hover {
+    color: blue;
+}
+
+
 
 @media  (max-width: 1023px) {
     .navmenu {
