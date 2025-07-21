@@ -1,6 +1,11 @@
 * {
-    font-family: Inter ;
+    font-family: Inter;
 }  
+
+.container {
+    margin: auto;
+    max-width: 1025px;
+}
 
 .navigation {
     display: flex;
@@ -17,12 +22,13 @@
     align-items: flex-start;
     outline: 2px solid orange;
     padding: 10px 30px;
+    background-color: #F6F8FA;
 }
 
 .front-logo {
     /* height: 9em; */
     width: 155px;
-    outline: 1px dashed;
+    /* outline: 1px dashed; */
 }
 
 .nav {
@@ -35,7 +41,6 @@
     padding: 10px 5px 5px 10px;
     font-size: 14px;
 }
-
 
 .navmenu {
     display: none;
@@ -70,7 +75,7 @@
     width: 335px;
     /* outline: 2px dashed red; */
 }
-
+.headsubtext,
 .subtext{
     /* outline: 2px dashed orange; */
     font-size: 14px;
@@ -83,7 +88,6 @@
     display: flex;
     flex-direction: row;
     padding-top: 40px;
-
 }
 
 .button {
@@ -128,7 +132,7 @@
 }
 
 .logo-area {
-    /* outline: 3px dashed green; */
+    outline: 3px dashed green;
     width: 55%;
     position: relative;
     display: flex;
@@ -143,11 +147,11 @@
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
     gap: 10em;
+    box-shadow: 0 3px 13px gray;
     /* margin: 1em; */
     /* box-shadow: 5px; */
 
 }
-
 /* specifying size here */
 .bg img {
     height: 40px;
@@ -159,48 +163,90 @@
     width: 30px;
 }
 
-/* positioning logos */
-
+/* positioning logos, and animating */
 .google-logo {
     position: relative;
     top: 1em;
     left: -12em;
+    animation: 2s linear 2s dropin;
 }
 
 .atlassian-logo {
     position: relative;
     top: -2em;
     left: 1em;
+    animation: 2s linear 0 flyin;
 }
 
 .asana-logo {
     position:  relative;
     top: -8em;
     left: 11em;
+    animation: 2s linear 0 flyin;
 }
 
 .paypal-logo {
     position:  relative;
     top: -3em;
     left: -10em;
+    animation: 3s linear 1.5s fadein;
 }
 
 .weave-logo {
     position: relative;
     top: -7em;
     left: 6em;
+    animation: 3s linear 2s fadein;
 }
 
 .googleads-logo {
     position: relative;
     top: -4em;
     left: 1em;
+    animation: 3s linear 2.5s fadein;
 }
 
 .calendar-logo {
     position: relative;
     top: -6em;
     left: 11em;
+    animation: 2s linear 0 flyin;
+}
+
+@keyframes fadein {
+    0%{
+        opacity: 100;
+    }
+    25% {
+        opacity: 50;
+    }
+    50%{
+        opacity: 0;
+    }
+    75% {
+        opacity: 50;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+@keyframes flyin {
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes dropin {
+    from {
+        transform: translateY(-200%);
+    }
+    to {
+        transform: translateY(0%);
+    }
 }
 
 .whyfront {
@@ -226,8 +272,19 @@
     text-align: center;
 }
 
+.fullbox {
+    outline: 2px dashed pink;
+    display: flex;
+    flex-direction: row;
+}
+.section {
+    outline: 1px dashed lime;
+}
+
 .subtext {
     text-align: center;
+    width: 580px;
+    padding-bottom: 20px;
 }
 
 .stepbullet {
@@ -240,6 +297,9 @@
 
 .bullet{
     /* outline: 2px solid pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #ECF2FF;
     padding: 15px;
     height: 50px;
@@ -247,14 +307,8 @@
     border-radius: 50%;
     
 }
-.elements,
-.bullet {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.ctrbul {
+.ctrbullet {
     height: 10px;
     width: 10px;
     background-color: #325a85;
@@ -263,50 +317,50 @@
 
 .wing {
     background-color: #677788;
-    width: 41px;
-    height: 1px;
+    width: 80px;
+    height: 3px;
 }
-.wing1 {
+.winginvis {
     background-color: rgb(73, 63, 63);
-    height: 1px;
-    width: 41px;
+    height: 0px;
+    width: 80px;
 }
-.steps {
+.step {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    /* align-items: center; */
-    /* outline: 2px solid rgb(212, 117, 133); */
+    justify-content: space-evenly;
     padding: 2px 20px;
     text-wrap: nowrap;
-
 }
-
-.step {
-    /* outline: 2px dashed red; */
-    padding: 0 30px;
-}
-
 
 .pricing-area{
     outline: 2px solid green;
-    margin: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
+    justify-content: center;   
+    padding-bottom: 120px; 
 }
 
 .pricing{
-    /* outline: 2px solid yellow; */
+    outline: 2px solid yellow;
     display: flex;
-    /* flex-direction: column;  */
     justify-content: center; 
 }
+
+.pricesubtext{
+    text-align: center;
+    color: #677788;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
 .planfeats{
     display: flex;
     flex-direction: row; 
-    /* outline: 1px solid yellow; */
+    outline: 3px solid rgb(3, 201, 30);
+    padding: 0 30px;
 }
 
 .plan{
@@ -316,7 +370,9 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 40px;
-    gap: 10px;
+    gap: 20px;
+    border: 1px solid black;
+    box-shadow: 0 10px 20px gray;
 }
 
 
@@ -329,10 +385,13 @@
 
 .number {
     font-size: 50px;
+    line-height: 100%;
 }
 
 .length {
     color: #677788;
+    line-height: 100%;
+    font-size: 20px;
 }
 
 .divider {
@@ -512,6 +571,7 @@
     display: flex;
     justify-content: center;
     padding: 20px;
+    /* gap: 20px; */
 }
 
 .contactForm {
@@ -530,7 +590,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 5px;
+    gap: 20px;
     width: 100%;
 }
 
@@ -566,6 +626,8 @@ input.button{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    color: #828282;
+    font-size: 14px;
 }
 
 a {
@@ -608,7 +670,7 @@ input.button {
 }
 
 .companylinks{
-    outline: 2px dashed green;
+    /* outline: 2px dashed green; */
 }
 
 .hiring {
@@ -626,23 +688,23 @@ input.button {
 }
 
 .companyfeatures {
-    outline: 2px dashed blue;
+    /* outline: 2px dashed blue; */
     
 } 
 
 .companyDocuments{
-    outline: 2px dashed purple;
-
+    /* outline: 2px dashed purple; */
 }
 
 .companyResource {
-    outline: 2px dashed rgb(169, 141, 245);
+    /* outline: 2px dashed rgb(169, 141, 245); */
 }
 
 .Help,
 .Account {
     display: flex;
     flex-direction: row;
+    gap: 5px;
 }
 
 .title {
@@ -666,8 +728,6 @@ input.button {
     color: blue;
 }
 
-
-
 @media  (max-width: 1023px) {
     .navmenu {
     display: block;
@@ -675,6 +735,14 @@ input.button {
     .nav-bar, .buy-btn {
         display:none;
     }
+
+
+
+
+
+
+
+
 }
 
 
