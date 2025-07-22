@@ -36,7 +36,7 @@ Please visit the [project mockups page](https://www.figma.com/design/Ou3rfktmwkX
 
 `Desktop specific`
 
-- [ ] Transitions and keyframe animations should be functional for desktop devices only.
+- [x ] Transitions and keyframe animations should be functional for desktop devices only.
 - [ x] The icons in the top section must appear with animations. Use at least two different animations or animation directions.
 - [ x] The following items must include hover animations:
 
@@ -48,4 +48,4 @@ Please visit the [project mockups page](https://www.figma.com/design/Ou3rfktmwkX
 
 `Tablet and mobile specific`
 
-- [ ] Should not have transition and keyframe animations working.
+- [x ] Should not have transition and keyframe animations working.

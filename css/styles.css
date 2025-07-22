@@ -142,15 +142,13 @@
 }
 
 .logo {
-    /* outline: 2px dashed rgb(255, 0, 43); */
+    outline: 2px dashed rgb(255, 0, 43);
     padding: 16px;
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
     gap: 10em;
     box-shadow: 0 3px 13px gray;
     /* margin: 1em; */
-    /* box-shadow: 5px; */
-
 }
 /* specifying size here */
 .bg img {
@@ -729,11 +727,154 @@ input.button {
 }
 
 @media  (max-width: 1023px) {
+    /* .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;} */
+    .topnav {
+        display: flex;
+        align-items: center;
+        /* width: 100%; */
+    }
     .navmenu {
-    display: block;
+        display: block;
     }
     .nav-bar, .buy-btn {
         display:none;
+    }
+    .head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 30px 0;
+        height: 50%;
+        background-position-x: 10%;
+        /* width: 100%; */
+    }
+    .leftpart{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 60px;
+        width: 100%;
+    }
+    .intro-title {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .headsubtext {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    .button:hover{
+        filter:none;
+    }
+    .logo{
+        animation: none;
+    }
+    .logo-area{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 309px;
+    }
+    .google-logo{
+        position: relative;
+        left:-13%;
+        top:-39%;
+    }
+    .atlassian-logo{
+        position: relative;
+        top: -37%;
+        left: 8%;
+    }
+    .asana-logo{
+        position: relative;
+        top: -36%;
+        left: 31%;
+    }
+    .paypal-logo{
+        position: relative;
+        top: 1%;
+        left: -32%;
+    }
+    .weave-logo{
+        position: relative;
+        top: -6%;
+        left: 1%;
+    }
+    .googleads-logo{
+        position: absolute;
+        top: 62%;
+        left: 37%;
+    }
+    .calendar-logo{
+        position: absolute;
+        top: 73%;
+        left: 72%;
+    }
+    .whyfront{
+        width: 90%;
+    }
+    .pricing-area {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+    .planfeats {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .plan{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        box-shadow: none;
+    }
+    .features{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+    .blue-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+    }
+    .hire{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .top{
+        width: 55%;
+    }
+    .employee{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .emp-title {
+        padding-bottom: 30px;
     }
 
 
