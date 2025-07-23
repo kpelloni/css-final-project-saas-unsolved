@@ -20,7 +20,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    outline: 2px solid orange;
+    /* outline: 2px solid orange; */
     padding: 10px 30px;
     background-color: #F6F8FA;
 }
@@ -54,7 +54,7 @@
     display: flex;
     flex-direction: row;
     height: 450px;
-    outline: 2px solid rgb(255, 0, 255);
+    /* outline: 2px solid rgb(255, 0, 255); */
     gap: 10px;
     padding: 40px 30px 0px;
     background-image: url("../assets/bg/background-top.svg");
@@ -132,7 +132,7 @@
 }
 
 .logo-area {
-    outline: 3px dashed green;
+    /* outline: 3px dashed green; */
     width: 55%;
     position: relative;
     display: flex;
@@ -142,7 +142,7 @@
 }
 
 .logo {
-    outline: 2px dashed rgb(255, 0, 43);
+    /* outline: 2px dashed rgb(255, 0, 43); */
     padding: 16px;
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
@@ -248,7 +248,7 @@
 }
 
 .whyfront {
-    outline: 2px dashed blue;
+    /* outline: 2px dashed blue; */
     margin: auto;
     height: 355px;
     width: 100%;
@@ -271,12 +271,12 @@
 }
 
 .fullbox {
-    outline: 2px dashed pink;
+    /* outline: 2px dashed pink; */
     display: flex;
     flex-direction: row;
 }
 .section {
-    outline: 1px dashed lime;
+    /* outline: 1px dashed lime; */
 }
 
 .subtext {
@@ -314,9 +314,9 @@
 }
 
 .wing {
-    background-color: #677788;
+    background-color:#E6E9F2;
     width: 80px;
-    height: 3px;
+    height: 1px;
 }
 .winginvis {
     background-color: rgb(73, 63, 63);
@@ -332,7 +332,7 @@
 }
 
 .pricing-area{
-    outline: 2px solid green;
+    /* outline: 2px solid green; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -341,7 +341,7 @@
 }
 
 .pricing{
-    outline: 2px solid yellow;
+    /* outline: 2px solid yellow; */
     display: flex;
     justify-content: center; 
 }
@@ -357,7 +357,7 @@
 .planfeats{
     display: flex;
     flex-direction: row; 
-    outline: 3px solid rgb(3, 201, 30);
+    /* outline: 3px solid rgb(3, 201, 30); */
     padding: 0 30px;
 }
 
@@ -369,8 +369,8 @@
     justify-content: flex-start;
     padding: 40px;
     gap: 20px;
-    border: 1px solid black;
-    box-shadow: 0 10px 20px gray;
+    border: 1px solid #E2E2E2;
+    box-shadow: 0 10px 10px rgb(180, 180, 180);
 }
 
 
@@ -474,21 +474,21 @@
 }
 
 .comp-box {
-    outline: 2px solid blue;
+    /* outline: 2px solid blue; */
     
 }
 
 .cancel-box{
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 
 }
 .images-box{
-    outline: 2px solid blue;
+    /* outline: 2px solid blue; */
     
 }
 
 .money-box{
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
     
 }
 
@@ -498,7 +498,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    outline: 2px dashed orange;
+    /* outline: 2px dashed orange; */
     padding: 30px;
 }
 .blue-section .hire, .testamony, .employee{
@@ -579,7 +579,7 @@
     align-items: center;
     gap: 20px;
     padding: 40px;
-    outline: 2px solid green;
+    /* outline: 2px solid green; */
     border-radius: 10%;
     background-color: white;
     line-height: 25px;
@@ -645,7 +645,8 @@ input.button {
     flex-direction: row;
     justify-content: space-evenly;
     padding: 40px 30px;
-    outline: 1px dashed;
+    /* outline: 1px dashed; */
+    gap: 30px;
 }
 
 .leftpanel,
@@ -657,6 +658,12 @@ input.button {
     flex-direction: column;
     justify-content: flex-start;
     gap: 5px;
+}
+
+.rightpanel {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
 }
 
 .data { 
@@ -727,11 +734,7 @@ input.button {
 }
 
 @media  (max-width: 1023px) {
-    /* .container{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin: auto;} */
+    
     .topnav {
         display: flex;
         align-items: center;
@@ -831,6 +834,17 @@ input.button {
     .whyfront{
         width: 90%;
     }
+    .bullet,
+    .ctrbullet{
+        scale: .75;
+    }
+    .wing,
+    .winginvis {
+        width: 60px;
+        display: flex;
+        justify-content: center;
+    }
+    
     .pricing-area {
         display: flex;
         flex-direction: column;
@@ -847,7 +861,7 @@ input.button {
         justify-content: center;
         align-items: center;
         width: 90%;
-        box-shadow: none;
+        margin: auto;
     }
     .features{
         display: flex;
@@ -876,20 +890,158 @@ input.button {
     .emp-title {
         padding-bottom: 30px;
     }
-
-
-
-
-
-
-
-
+    .contactForm{
+        display: flex;
+        justify-content: space-evenly;
+        width: 75%;
+        border-radius: 10px;
+        padding: 50px;
+    }
+    .nameSection{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .email{
+        display: flex;
+        justify-content: space-evenly;
+        width: 75%;
+    }
+    .dropdown{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .project {
+        display: flex;
+        justify-content: space-evenly;
+        width: 75%;
+    }
+    .formGroup {
+        display: flex;
+        justify-content: space-around;
+        width: 75%;
+    }
+    .footer{
+        display: flex;
+        padding: 80px 30px 40px;
+        flex-direction: row;
+        width: 700px;
+        justify-content: center;
+        margin: auto;
+    }
+    .leftpanel{
+        font-size: 14px;
+    }
+    .rightpanel{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        width: 400px;
+    }
+    .companyfeatures{
+        padding-left: 30px;
+    }
 }
 
-
-
-
-
 @media (max-width: 767px){
+    .whyfront{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .subtext{
+        text-align: wrap;
+        width: 350px;
+    }
+    .fullbox{
+        display: flex;
+        flex-direction: column;
+    }
+    .section{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .wing,
+    .winginvis{
+        display: none;
+    }
+    .pricesubtext{
+        font-size: 16px;
+    }
+    .planfeats{
+        gap: 30px;
+    }
+    .plan{
+        text-align: left;
+        padding: 40px;
+        gap: 30px;
+    }
+    .features{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .blue-section{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    .hire,
+    .top, 
+    .testamony,
+    .employee{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .contactForm p {
+        text-align: left;
+    }
 
+    .contact-Form{
+        display: flex;
+        align-items: center;
+    }
+
+    .email,
+    .project,
+    .link{
+        display: flex;
+        width: 100%;
+    }
+    .nameSection,
+    .dropdown{
+        display: flex;
+        flex-direction: column;
+    }
+    .termsofservice {
+        display: none;
+    }
+    .formGroup{
+        width: 100%;
+        display: flex;
+        text-align: justify;
+    }
+    .footer,
+    .rightpanel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    .footer{
+        padding: 80px 16px 40px;
+        width: 400px;
+    }
+    .companyfeatures{
+        padding: 0;
+    }
 }
