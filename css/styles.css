@@ -950,7 +950,6 @@ input.button {
         height: fit-content;
     }
     .subtext{
-        text-align: wrap;
         width: 350px;
     }
     .fullbox{
